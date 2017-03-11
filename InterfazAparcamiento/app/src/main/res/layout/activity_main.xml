@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.vcarmen.interfazaparcamiento.ActivityPropietarios"
+    android:background="#4442ff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Barra de estado: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:text="conectado "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_marginStart="39dp"
+                android:id="@+id/textView2"
+                android:textColor="#ffffff"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColor="#ffffff">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="DNI"
+                android:ems="15"
+                android:layout_below="@+id/button"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="25dp"
+                android:id="@+id/editTextDni"
+                android:textColor="#ffffff"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Nombre"
+                android:ems="15"
+                android:layout_below="@+id/button"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="25dp"
+                android:id="@+id/editTextNombre"
+                android:textColor="#ffffff"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Apellidos"
+                android:ems="15"
+                android:layout_below="@+id/button"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="25dp"
+                android:id="@+id/editTextApellidos"
+                android:textColor="#ffffff"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableRow>
+            <Button
+                android:text="Listar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button" />
+
+            <Button
+                android:text="Eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/button"
+                android:layout_toEndOf="@+id/button"
+                android:id="@+id/button2" />
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="Crear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toEndOf="@+id/button2"
+                android:id="@+id/button3" />
+            <Button
+                android:text="Actualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toEndOf="@+id/button2"
+                android:id="@+id/button4" />
+        </TableRow>
+
+        <TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lista"
+            android:textColor="#ffffff">
+
+
+        </ListView>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

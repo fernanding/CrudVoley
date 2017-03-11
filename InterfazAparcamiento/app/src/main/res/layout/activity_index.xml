@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4442ff">
+
+    <TextView
+        android:text="Gestion REST Aparcamientos"
+        android:layout_width="match_parent"
+        android:textColor="#00ff22"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="29dp"/>
+
+    <Button
+        android:text="Propietarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPropi"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="inicioCrud"/>
+    <Button
+        android:text="Plantas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlanta"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="inicioCrud2"/>
+
+
+</RelativeLayout>
